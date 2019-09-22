@@ -1,0 +1,121 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+	/* background-color: #f1f1f1; */
+}
+
+#infobox {
+    margin-top: 50px;
+}
+#mainpage {
+    min-height: 90%;
+}
+
+#aside, #bside {
+    float: left;
+    box-sizing: border-box;
+    max-height: 100%;
+    overflow-x: scroll;
+}
+#space{
+	padding-top:13%;
+}
+
+#aside {
+    width: 34%;
+	position:fixed;
+	/* background-color: #222; */
+  height: 100%;
+
+}
+
+#bside {
+    border-left: 1px solid;
+    text-align: center;
+	margin-left: 34%;
+	background-color: #FFF;
+}
+
+#bside .battler {
+    font-size: 13px;
+    line-height: 15px;
+    width: 140px;
+    height: 80px;
+    margin: 3px;
+    text-align: center;
+    display: inline-block;
+    /*background-color: #FFFFFF;*/
+    border-radius: 0px;
+
+}
+#bside .battler b {
+	width: 100%;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+	white-space: normal;
+}
+
+#bside .battler small {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+#entryform {
+    text-align: center;
+    margin: 5px auto 20px;
+    height: 70px;
+}
+
+#entryform > .form-group {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+
+#entryform > .form-group > label, #entryform > .form-group > input {
+    display: block;
+    margin: 0 auto;
+}
+
+#targetbox {
+    clear: both;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#battletable {
+    clear: both;
+}
+
+#battletable .close {
+    color: #000;
+    text-align: center;
+    float: none;
+}
+
+.bg-ultimate { background-color: #FFEBEE; }
+.bg-vip { background-color: #FFF3E0; }
+.bg-strong { background-color: #FCE4EC; }
+.bg-champ { background-color: #E8EAF6; }
+.bg-elite4 { background-color: #E3F2FD; }
+.bg-trainers { background-color: #EDE7F6; }
+.bg-gym { background-color: #F1F8E9; }
+.bg-wild { background-color: #EFEBE9; }
+
+
+@media screen and (max-width: 700px) {
+  .navbar{
+	  width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #aside a {}
+  #bside {margin-left: 0;}
+}
